@@ -89,6 +89,15 @@ body {
     font-family: 'Sacramento', cursive;
 }
 
+.info {
+    margin: 60px;
+}
+
+.about-us-pic {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
 
 
 /* Mobile Styles */
@@ -123,6 +132,16 @@ body {
         /* font-family: "Brush Script MT"; */
     }
     
+    .info {
+        margin: 150px;
+        margin-top: 40px;
+    }
+    
+    .about-us-pic {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    
 }
 
 /* Desktop Styles */
@@ -150,6 +169,16 @@ body {
         margin-top: 10px;
         font-family: 'Sacramento', cursive;
         /* font-family: "Brush Script MT"; */
+    }
+    
+    .info {
+    margin: 300px;
+    margin-top: 40px;
+    }
+    
+    .about-us-pic {
+        padding-left: 200px;
+        padding-right: 200px;
     }
 
 }
