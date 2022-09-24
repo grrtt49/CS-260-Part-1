@@ -34,11 +34,6 @@
 }
 
 /* ELEMENTS */
-@font-face {
-    font-family: Dancing-cursive;
-    src: url(../Dancing_Script/DancingScript-VariableFont_wght.ttf);
-}
-
 
 body {
     background-color: white;
@@ -123,59 +118,122 @@ body {
     font-family: 'Sacramento', cursive;
 }
 
-.info {
-    margin: 60px;
-}
-
 .about-us-pic {
     padding-left: 60px;
     padding-right: 60px;
 }
 
+.info {
+    margin-bottom: 50px;
+    padding: 0 60px 0 60px;
+}
+
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    .page-title h1{
+        font-size: 4em;
+    }
+    
+    .product p {
+        font-size: 1.1em;
+    }
+    
+    .products-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: minmax(100px, auto);
+      grid-column-gap: 15px;
+      grid-row-gap: 15px;
+      margin: 20px 30px;
+      text-align: center;
+    }
+    
+    .product h2 {
+        font-size: 1.9em;
+        margin-top: 10px;
+        font-family: 'Sacramento', cursive;
+        /* font-family: "Brush Script MT"; */
+    }
+    
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+    .page-title h1{
+        font-size: 4em;
+    }
+    
+    .product p {
+        font-size: 1.1em;
+    }
+    
+    .products-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-auto-rows: minmax(100px, auto);
+      grid-column-gap: 40px;
+      grid-row-gap: 40px;
+      margin: 40px 100px;
+      text-align: center;
+    }
+    
+    .product h2 {
+        font-size: 1.9em;
+        margin-top: 10px;
+        font-family: 'Sacramento', cursive;
+        /* font-family: "Brush Script MT"; */
+    }
+
+    
+}
 
 .btn-primary.focus, .btn-primary:focus, .btn-primary:not(:disabled):not(.disabled):active:focus {
     box-shadow: 0 0 0 0.2rem rgb(222 190 90 / 50%);
 }
 
-.navbar-dark .navbar-brand {
-    color: #E3CE76;
-    font-family: Dancing-cursive;
-    font-size: 30px;
+.navbar-light .navbar-brand {
+    color: #BD9334;
+    /*font-family: Dancing-cursive;*/
+    font-family: 'Sacramento', cursive;
+    font-size: 40px;
+    line-height: 50px;
+    padding-top: 10px;
 }
 
-.navbar-dark .navbar-brand:hover {
-    color: #DEBE5A;
+.navbar-light .navbar-brand:hover {
+    color: #BD9334;
 }
 
 #navbarNav {
     justify-content: flex-end;
 }
 
-.navbar-dark .navbar-nav .active>.nav-link, 
-.navbar-dark .navbar-nav .nav-link.active, 
-.navbar-dark .navbar-nav .nav-link.show, 
-.navbar-dark .navbar-nav .show>.nav-link {
-    color: #E3CE76;
-    font-weight: bold;
-}
+/*.navbar-dark .navbar-nav .active>.nav-link, */
+/*.navbar-dark .navbar-nav .nav-link.active, */
+/*.navbar-dark .navbar-nav .nav-link.show, */
+/*.navbar-dark .navbar-nav .show>.nav-link {*/
+/*    color: #E3CE76;*/
+/*    font-weight: bold;*/
+/*}*/
 
-.navbar-dark .navbar-nav .nav-link {
-    color: rgba(227, 206, 118, 0.7);
-}
+/*.navbar-dark .navbar-nav .nav-link {*/
+/*    color: rgba(227, 206, 118, 0.7);*/
+/*}*/
 
-.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
-    color: rgba(227, 206, 118, 0.9);
-}
+/*.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {*/
+/*    color: rgba(227, 206, 118, 0.9);*/
+/*}*/
 
 .nav-item {
     padding: 5px 20px 5px 20px;
 }
-
-@font-face {
-    font-family: Dancing-cursive;
-    src: url(../Dancing_Script/DancingScript-VariableFont_wght.ttf);
-}
-
 .banner {
     background-size: 1200px auto;
     height: 500px;
@@ -185,6 +243,11 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.banner h2 {
+    font-family: 'Sacramento', cursive;
+    font-size: 60px;
 }
 
 .flavors-container {
@@ -232,6 +295,10 @@ body {
     flex-direction: column;
 }
 
+.contact-section-2 {
+    margin-bottom: 40px;
+}
+
 .form-component {
     margin-bottom: 15px;
 }
@@ -242,93 +309,6 @@ body {
 
 /* RESPONSIVE DESIGN */
 
-/* Mobile Styles */
-@media only screen and (max-width: 400px) {
-
-}
-
-/* Tablet Styles */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-    .page-title h1{
-        font-size: 4em;
-    }
-    
-    .product p {
-        font-size: 1.1em;
-    }
-    
-    .products-container {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-auto-rows: minmax(100px, auto);
-      grid-column-gap: 30px;
-      grid-row-gap: 30px;
-      margin: 20px 100px;
-      text-align: center;
-    }
-    
-    .product h2 {
-        font-size: 1.9em;
-        margin-top: 10px;
-        font-family: 'Sacramento', cursive;
-        /* font-family: "Brush Script MT"; */
-    }
-    
-    .info {
-        margin: 150px;
-        margin-top: 40px;
-    }
-    
-    .about-us-pic {
-        padding-left: 100px;
-        padding-right: 100px;
-    }
-    
-}
-
-/* Desktop Styles */
-@media only screen and (min-width: 961px) {
-    .page-title h1{
-        font-size: 4em;
-    }
-    
-    .product p {
-        font-size: 1.1em;
-    }
-    
-    .products-container {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-auto-rows: minmax(100px, auto);
-      grid-column-gap: 40px;
-      grid-row-gap: 40px;
-      margin: 40px 100px;
-      text-align: center;
-    }
-    
-    .product h2 {
-        font-size: 1.9em;
-        margin-top: 10px;
-        font-family: 'Sacramento', cursive;
-        /* font-family: "Brush Script MT"; */
-    }
-    
-    .info {
-    margin: 300px;
-    margin-top: 40px;
-    }
-    
-    .about-us-pic {
-        padding-left: 200px;
-        padding-right: 200px;
-    }
-
-    
-}
-
-
-
-
 @media only screen and (max-width: 575px) {
     .banner {
         background-size: auto 100%;
@@ -336,6 +316,10 @@ body {
     
     .main-section {
         margin-bottom: 25px;
+    }
+    
+    .contact-section-2 {
+        order: -1;
     }
 }
 
