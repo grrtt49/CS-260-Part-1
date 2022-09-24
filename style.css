@@ -34,6 +34,11 @@
 }
 
 /* ELEMENTS */
+@font-face {
+    font-family: Dancing-cursive;
+    src: url(../Dancing_Script/DancingScript-VariableFont_wght.ttf);
+}
+
 
 body {
     background-color: white;
@@ -128,8 +133,6 @@ body {
     padding: 0 60px 0 60px;
 }
 
-
-
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
 
@@ -193,7 +196,6 @@ body {
 
     
 }
-
 .btn-primary.focus, .btn-primary:focus, .btn-primary:not(:disabled):not(.disabled):active:focus {
     box-shadow: 0 0 0 0.2rem rgb(222 190 90 / 50%);
 }
@@ -308,6 +310,93 @@ body {
 }
 
 /* RESPONSIVE DESIGN */
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    .page-title h1{
+        font-size: 4em;
+    }
+    
+    .product p {
+        font-size: 1.1em;
+    }
+    
+    .products-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: minmax(100px, auto);
+      grid-column-gap: 30px;
+      grid-row-gap: 30px;
+      margin: 20px 100px;
+      text-align: center;
+    }
+    
+    .product h2 {
+        font-size: 1.9em;
+        margin-top: 10px;
+        font-family: 'Sacramento', cursive;
+        /* font-family: "Brush Script MT"; */
+    }
+    
+    .info {
+        margin: 150px;
+        margin-top: 40px;
+    }
+    
+    .about-us-pic {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+    .page-title h1{
+        font-size: 4em;
+    }
+    
+    .product p {
+        font-size: 1.1em;
+    }
+    
+    .products-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-auto-rows: minmax(100px, auto);
+      grid-column-gap: 40px;
+      grid-row-gap: 40px;
+      margin: 40px 100px;
+      text-align: center;
+    }
+    
+    .product h2 {
+        font-size: 1.9em;
+        margin-top: 10px;
+        font-family: 'Sacramento', cursive;
+        /* font-family: "Brush Script MT"; */
+    }
+    
+    .info {
+    margin: 300px;
+    margin-top: 40px;
+    }
+    
+    .about-us-pic {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+    
+}
+
+
+
 
 @media only screen and (max-width: 575px) {
     .banner {
