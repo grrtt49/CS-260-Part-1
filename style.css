@@ -1,41 +1,41 @@
 /* IMAGES */
 
 .choc-img {
-    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('images/chocolates.jpg');
+    background: linear-gradient( rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.51) ), url('images/chocolates.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: top left;
 }
 
 .bg-caramel {
-  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('images/caramel.jpg');
+  background: linear-gradient( rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.51) ), url('images/caramel.jpg');
 }
 .bg-bavarian-creme {
-  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('images/bavarian-creme.jpg');
+  background: linear-gradient( rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.51) ), url('images/bavarian-creme.jpg');
 }
 .bg-cherry {
-  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('images/cherries.jpg');
+  background: linear-gradient( rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.51) ), url('images/cherries.jpg');
 }
 .bg-coconut {
-  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('images/coconut.jpg');
+  background: linear-gradient( rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.51) ), url('images/coconut.jpg');
 }
 .bg-maple-nut {
-  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('images/maple.jpeg');
+  background: linear-gradient( rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.51) ), url('images/maple.jpeg');
 }
 .bg-peppermint {
-  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('images/peppermint.jpg');
+  background: linear-gradient( rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.51) ), url('images/peppermint.jpg');
 }
 .bg-raspberry {
-  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('images/raspberry.jpg');
+  background: linear-gradient( rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.51) ), url('images/raspberry.jpg');
 }
 .bg-truffle {
-  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('images/truffles.jpg');
+  background: linear-gradient( rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.51) ), url('images/truffles.jpg');
 }
 
 /* ELEMENTS */
 
 body {
-    background-color: #E3CE76;
+    background-color: white;
 }
 
 .btn-primary {
@@ -111,6 +111,7 @@ body {
 }
 
 .flavors-container {
+    margin: 55px 0 55px 0;
     display: flex;
     flex-direction: row;
     white-space: nowrap;
@@ -130,15 +131,36 @@ body {
     color: white;
     background-size: 100%;
     font-size: 20px;
-    margin: 0 15px 0 15px;
+    margin: 0 25px 0 25px;
 }
 
 .main-section-container {
-    background: #BD9334;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /*background: #71412C;*/
+    color: black;
 }
 
 .main-section {
     padding: 10px;
+}
+
+.contact-container {
+    background-color: white;
+    padding: 20px;
+}
+
+.contact-form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-component {
+    margin-bottom: 15px;
+}
+
+.form-component p {
+    margin-bottom: 5px;
 }
 
 /* RESPONSIVE DESIGN */
@@ -146,6 +168,10 @@ body {
 @media only screen and (max-width: 575px) {
     .banner {
         background-size: auto 100%;
+    }
+    
+    .main-section {
+        margin-bottom: 25px;
     }
 }
 
