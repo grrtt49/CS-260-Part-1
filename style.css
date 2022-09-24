@@ -1,33 +1,62 @@
-/*@font-face {
-    font-family: 'sacramentoregular';
-    src: url('/fonts/sacramento-regular-webfont.woff2') format('woff2'),
-         url('/fonts/sacramento-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
 
+/* IMAGES */
+
+.choc-img {
+    background: linear-gradient( rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.51) ), url('images/chocolates.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top left;
 }
-*/
+
+.bg-caramel {
+  background: linear-gradient( rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.51) ), url('images/caramel.jpg');
+}
+.bg-bavarian-creme {
+  background: linear-gradient( rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.51) ), url('images/bavarian-creme.jpg');
+}
+.bg-cherry {
+  background: linear-gradient( rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.51) ), url('images/cherries.jpg');
+}
+.bg-coconut {
+  background: linear-gradient( rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.51) ), url('images/coconut.jpg');
+}
+.bg-maple-nut {
+  background: linear-gradient( rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.51) ), url('images/maple.jpeg');
+}
+.bg-peppermint {
+  background: linear-gradient( rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.51) ), url('images/peppermint.jpg');
+}
+.bg-raspberry {
+  background: linear-gradient( rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.51) ), url('images/raspberry.jpg');
+}
+.bg-truffle {
+  background: linear-gradient( rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.51) ), url('images/truffles.jpg');
+}
+
+/* ELEMENTS */
 
 body {
+    background-color: white;
     font-family: 'Montserrat', sans-serif
 }
 
 .btn-primary {
-    background-color: #ffaa00;
-    border-color: #e69900;
-    color: black;
+    background-color: #DEBE5A;
+    border-color: #DEBE5A;
+    color: black !important;
 }
 
 .btn-primary:hover {
-    background-color: #ffb31a;   
-    border-color: #e69900;
-    color: black;
+    background-color: #e6cc7f;   
+    border-color: #e6cc7f;
+    color: black !important;
 }
 
 .btn-primary:active {
-    background-color: #e69900 !important;
+    background-color: #d9b33f !important;
     color: black !important;
-    border-color: #e69900 !important;
+    border-color: #d9b33f !important;
+    /* border-color: #e69900 !important; */
 }
 
 .bg-light {
@@ -181,4 +210,130 @@ body {
         padding-right: 200px;
     }
 
+    
+}
+
+.btn-primary.focus, .btn-primary:focus, .btn-primary:not(:disabled):not(.disabled):active:focus {
+    box-shadow: 0 0 0 0.2rem rgb(222 190 90 / 50%);
+}
+
+.navbar-dark .navbar-brand {
+    color: #E3CE76;
+    font-family: Dancing-cursive;
+    font-size: 30px;
+}
+
+.navbar-dark .navbar-brand:hover {
+    color: #DEBE5A;
+}
+
+#navbarNav {
+    justify-content: flex-end;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link, 
+.navbar-dark .navbar-nav .nav-link.active, 
+.navbar-dark .navbar-nav .nav-link.show, 
+.navbar-dark .navbar-nav .show>.nav-link {
+    color: #E3CE76;
+    font-weight: bold;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(227, 206, 118, 0.7);
+}
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    color: rgba(227, 206, 118, 0.9);
+}
+
+.nav-item {
+    padding: 5px 20px 5px 20px;
+}
+
+@font-face {
+    font-family: Dancing-cursive;
+    src: url(../Dancing_Script/DancingScript-VariableFont_wght.ttf);
+}
+
+.banner {
+    background-size: 1200px auto;
+    height: 500px;
+    width: 100%;
+    color: white;
+    padding: 0 5% 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flavors-container {
+    margin: 55px 0 55px 0;
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    overflow-x: auto;
+    min-width: 0;
+    padding: 15px 0px 15px 0px;
+}
+
+.flavor {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 100%;
+    height: 200px;
+    flex: 0 0 200px;
+    color: white;
+    background-size: 100%;
+    font-size: 20px;
+    margin: 0 25px 0 25px;
+}
+
+.main-section-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /*background: #71412C;*/
+    color: black;
+}
+
+.main-section {
+    padding: 10px;
+}
+
+.contact-container {
+    background-color: white;
+    padding: 20px;
+}
+
+.contact-form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-component {
+    margin-bottom: 15px;
+}
+
+.form-component p {
+    margin-bottom: 5px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media only screen and (max-width: 575px) {
+    .banner {
+        background-size: auto 100%;
+    }
+    
+    .main-section {
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .banner {
+        background-size: 100% auto;
+    }
 }
